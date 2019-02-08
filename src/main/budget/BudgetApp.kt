@@ -3,21 +3,12 @@ package budget
 fun main() {
     val budget = Budget(
         listOf(
-            BudgetItem("Mortgage", 777.05),
-            BudgetItem("Association", 247.0),
+            BudgetItem("Mortgage", 500.0),
             BudgetItem("Cell Phone", 25.0),
-            BudgetItem("Internet", 50.0),
-            BudgetItem("Car Insurance", 66.67),
-            BudgetItem("Electricity", 75.0),
-            BudgetItem("Gas", 30.0),
-            BudgetItem("Food", 300.0),
-            BudgetItem("Household", 20.0),
-            BudgetItem("Leisure", 100.0),
-            BudgetItem("Clothes", 50.0),
-            BudgetItem("Contingency", 200.0)
+            BudgetItem("Internet", 50.0)
         )
     )
-    val user = User("charles.mulic@gmail.com", "password", budget)
+    val user = User("someone@gmail.com", "password", budget)
 
     println(budget.monthlyExpenses())
 }
