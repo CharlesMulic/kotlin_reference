@@ -1,0 +1,40 @@
+{
+  "user": "charles.mulic@gmail.com",
+  "budget": {
+    "expenses": [],
+    "income": [],
+    "liabilities": {
+      "fixed": [
+        {
+          "name": "Mortgage",
+          "type": "debt",
+          "amount": 100000.0
+        }
+      ],
+      "recurring": [
+        { 
+          "name": "Mortgage Payment",
+          "amount": 777.05
+        },
+        {
+          "name": "Cranberry Meadows Association",
+          "amount": 247.0
+        }
+      ]
+    },
+    "assets": [
+      {
+        "name": "Home Equity",
+        "amount": 30000.0
+      },
+      {
+        "name": "2002 Acura RSX",
+        "amount": 3000.0
+      },
+      {
+        "name": "Robinhood Brokerage Account",
+        "amount": 80000.0
+      }
+    ]
+  }
+}
