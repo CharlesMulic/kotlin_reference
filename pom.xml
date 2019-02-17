@@ -6,7 +6,17 @@
 
     <properties>
         <kotlin.version>1.3.20</kotlin.version>
+        <jdk.version>1.8</jdk.version>
+        <spek.version>2.0.0</spek.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>test</id>
+            <name>Spring Releases</name>
+            <url>http://repo.spring.io/libs-release/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -79,6 +89,20 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.spekframework.spek2/spek-dsl-jvm -->
+        <dependency>
+            <groupId>org.spekframework.spek2</groupId>
+            <artifactId>spek-dsl-jvm</artifactId>
+            <version>2.0.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>${kotlin.version}</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -109,6 +133,10 @@
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
             </plugin>
         </plugins>
     </build>
