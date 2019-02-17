@@ -4,6 +4,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 
+// https://www.youtube.com/watch?v=R425cc6XrvA
 object JUnitToSpek : Spek({
 
     val scopeManager by memoized { MockScopeManager() }
@@ -40,7 +41,6 @@ object JUnitToSpek : Spek({
             }
         }
     }
-
 
 //    @Test
 //    fun `remove access token should stop logged in scope and start logged out scope`() {
